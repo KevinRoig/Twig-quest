@@ -1,0 +1,19 @@
+{% extends "base.html.twig" %}
+
+{% block nav %}
+<nav>
+  <h1>Bienvenue sur Twigtest</h1>
+</nav>
+{% endblock %}
+
+{% block view %}
+  <div class ="row row-cols-3">
+  {% for product in products %}
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <p class="card-text">{{ product}}</p>
+    </div>
+  </div>
+{% endfor %}
+</div>
+{% endblock %}
